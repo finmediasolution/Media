@@ -687,7 +687,7 @@ h6 {
 }
 
 .footer-top {
-  background: linear-gradient(-45deg, #002b2c, #45fcfcb6, #02fbea89, #02686193);
+  background: linear-gradient(-45deg, #002b2c, #01fdf5b6, #02fbea89, #02686193);
   background-size: 400% 400%;
   animation: footerGradient 10s ease infinite;
   padding-top: 50px;
@@ -781,7 +781,7 @@ h6 {
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--default-color), transparent 0%);
   display: inline-block;
   line-height: 1;
 }
@@ -1446,7 +1446,7 @@ section,
 .contact {
   padding-top: 8px;
   padding-bottom: 40px;
-  background-image: url("../img/2.png");
+  background-image: url("../img/social1.png");
   background-position: center;
   background-repeat: no-repeat;
   position: relative;

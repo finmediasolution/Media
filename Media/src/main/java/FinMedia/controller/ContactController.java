@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import FinMedia.service.EmailService;
 
-@CrossOrigin(origins = "https://finmediasolution.com")
+@CrossOrigin(origins = "*")
  // Use only for local dev
 @RestController
 @RequestMapping("/contact")
@@ -34,13 +34,13 @@ public class ContactController {
 
         // Send confirmation email to the visitor
         String visitorMessage = "Dear " + name + ",\n\nThank you for contacting us. We have received your message:\n" + message +
-                                "\n\nWe will get back to you shortly.\n\nBest regards,\nHTGA Team";
+                                "\n\nWe will get back to you shortly.\n\nBest regards,\nFin Media Solution Team";
         emailService.sendEmail(email, "Thank you for contacting us", visitorMessage);
 
        // Send visitor's details to your email
         String ownerMessage = "New Contact Form Submission:\n\nName: " + name + "\nEmail: " + email +
         "\nPhone: " + phone + "\nSubject: " + subject + "\nMessage: " + message;
-        emailService.sendEmail("thehealthtouristguide@gmail.com", "New Contact Form Submission", ownerMessage);
+        emailService.sendEmail("finmediasolution01@gmail.com", "New Contact Form Submission", ownerMessage);
 
         return "Message sent successfully!";
     }
