@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import FinMedia.service.EmailService;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "finmediasolution.com")
  // Use only for local dev
 @RestController
 @RequestMapping("/contact")
